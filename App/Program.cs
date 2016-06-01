@@ -20,7 +20,7 @@ namespace RebootTray.App
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                ApplicationContext applicationContext = new CustomApplicationContext();
+                ApplicationContext applicationContext = new RebootTrayApplicationContext();
                 Application.Run(applicationContext);
             }
         }

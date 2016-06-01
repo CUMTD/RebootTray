@@ -15,32 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_31CF934D7A7B49D3945C683D95755018"
+        "MsmKey" = "8:_3FE2ED6EECE14F428ECBEB3F39252E08"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
+        "MsmKey" = "8:_D72944FB43064690BF9D06DC77BBC500"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C6C7604ADF862558EDACBB1AF465984D"
-        "OwnerKey" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C6C7604ADF862558EDACBB1AF465984D"
+        "OwnerKey" = "8:_D72944FB43064690BF9D06DC77BBC500"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -68,6 +56,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -135,7 +131,7 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_31CF934D7A7B49D3945C683D95755018"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3FE2ED6EECE14F428ECBEB3F39252E08"
             {
             "SourcePath" = "8:..\\App\\reboot.ico"
             "TargetName" = "8:reboot.ico"
@@ -153,37 +149,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C6C7604ADF862558EDACBB1AF465984D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_C6C7604ADF862558EDACBB1AF465984D"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -254,30 +219,30 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Reboot Tray"
         "ProductCode" = "8:{5244D8D3-D8A7-4104-8D04-D981DDE6B99D}"
-        "PackageCode" = "8:{A65947D0-B210-4C2C-8AB2-E679052AAC21}"
+        "PackageCode" = "8:{6A205729-69C8-40BC-80EC-404E040EFF7B}"
         "UpgradeCode" = "8:{60168BC4-6481-4675-AC46-F7F84F05FCB4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Champaign-Urbana Mass Transit District"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/CUMTD/RebootTray/issues"
-        "Title" = "8:Installer"
+        "Title" = "8:Install Reboot Tray"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Ryan Blackman"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:Copies run command to reboot at 4AM to clipboard."
+        "ARPCOMMENTS" = "8:Tray application that copies run command to reboot at 4AM to clipboard."
         "ARPURLINFOABOUT" = "8:https://www.cumtd.com"
-        "ARPPRODUCTICON" = "8:_31CF934D7A7B49D3945C683D95755018"
+        "ARPPRODUCTICON" = "8:_3FE2ED6EECE14F428ECBEB3F39252E08"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
-        "PostBuildEvent" = "8:\"C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\x86\\signtool.exe\" sign /a  $(BuiltOuputPath)"
+        "PostBuildEvent" = "8:\"C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\x86\\signtool.exe\" sign /a /t http://tsa.starfieldtech.com  $(BuiltOuputPath)"
         "RunPostBuildEvent" = "3:0"
         }
         "Registry"
@@ -374,7 +339,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_062D02D482FC4647A0639CF66A063FC5"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_264940BECFC44E04881885C5385A39C2"
             {
             "Name" = "8:Reboot Tray"
             "Arguments" = "8:"
@@ -382,24 +347,24 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
-            "Folder" = "8:_0E8C961E282F473EBCE593B360438A95"
-            "WorkingFolder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
-            "Icon" = "8:_31CF934D7A7B49D3945C683D95755018"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0039088E28A45738EFC03C33D3F41AE"
-            {
-            "Name" = "8:Reboot Tray"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
+            "Target" = "8:_D72944FB43064690BF9D06DC77BBC500"
             "Folder" = "8:_AA06EB863F0746C4948F3431369C0758"
             "WorkingFolder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
-            "Icon" = "8:_31CF934D7A7B49D3945C683D95755018"
+            "Icon" = "8:_3FE2ED6EECE14F428ECBEB3F39252E08"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8D95F35F71B248C1AFABBBDE38BA52DA"
+            {
+            "Name" = "8:Reboot Tray"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D72944FB43064690BF9D06DC77BBC500"
+            "Folder" = "8:_0E8C961E282F473EBCE593B360438A95"
+            "WorkingFolder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
+            "Icon" = "8:_3FE2ED6EECE14F428ECBEB3F39252E08"
             "Feature" = "8:"
             }
         }
@@ -801,37 +766,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4130D8E0827F4665B64EE224CD4ECAB5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D72944FB43064690BF9D06DC77BBC500"
             {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{6A1F18E8-0948-4B6F-9251-120E5281005C}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_474C9AAAF55D46B080CFB4C4E44A0077"
-            {
-            "SourcePath" = "8:..\\App\\obj\\Debug\\RebootTray.App.exe"
+            "SourcePath" = "8:..\\App\\obj\\Release\\RebootTray.App.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"

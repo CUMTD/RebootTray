@@ -254,7 +254,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Reboot Tray"
         "ProductCode" = "8:{5244D8D3-D8A7-4104-8D04-D981DDE6B99D}"
-        "PackageCode" = "8:{E5FD36C0-231A-4457-8735-70B12EAB1610}"
+        "PackageCode" = "8:{A65947D0-B210-4C2C-8AB2-E679052AAC21}"
         "UpgradeCode" = "8:{60168BC4-6481-4675-AC46-F7F84F05FCB4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -374,6 +374,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_062D02D482FC4647A0639CF66A063FC5"
+            {
+            "Name" = "8:Reboot Tray"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_474C9AAAF55D46B080CFB4C4E44A0077"
+            "Folder" = "8:_0E8C961E282F473EBCE593B360438A95"
+            "WorkingFolder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"
+            "Icon" = "8:_31CF934D7A7B49D3945C683D95755018"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0039088E28A45738EFC03C33D3F41AE"
             {
             "Name" = "8:Reboot Tray"
@@ -817,7 +831,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_474C9AAAF55D46B080CFB4C4E44A0077"
             {
-            "SourcePath" = "8:..\\App\\obj\\Release\\RebootTray.App.exe"
+            "SourcePath" = "8:..\\App\\obj\\Debug\\RebootTray.App.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8CB0D77AEC584EDC8A1D2B68E3F25032"

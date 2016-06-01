@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace RebootTray.App
@@ -14,11 +13,16 @@ namespace RebootTray.App
         [STAThread]
         private static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-
-            ApplicationContext applicationContext = new CustomApplicationContext();
-            Application.Run(applicationContext);
+            // Only start if it is not already running.
+            var appProcessName = Path.GetFileNameWithoutExtension(Application.ExecutablePath);
+            var runningProcesses = Process.GetProcessesByName(appProcessName);
+            if (runningProcesses.Length == 1)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                ApplicationContext applicationContext = new CustomApplicationContext();
+                Application.Run(applicationContext);
+            }
         }
     }
 }

@@ -16,19 +16,23 @@ namespace RebootTray.App
             {
                 ContextMenuStrip = new ContextMenuStrip(),
                 Icon = new Icon("reboot.ico"),
-                Text = "Copies run command to reboot at 4AM to clipboard.",
+                Text = "Click to copy a command to reboot at 4AM.",
                 Visible = true
             };
             NotifyIcon.MouseUp += notifyIcon_MouseUp;
         }
 
-        private static void notifyIcon_MouseUp(object sender, EventArgs e)
+        private void notifyIcon_MouseUp(object sender, EventArgs e)
         {
             var now = DateTime.Now;
             var then = GetNext4AM(now);
             var timespan = then - now;
             var seconds = Math.Round(timespan.TotalSeconds);
-            Clipboard.SetText($"shutdown /r /t {seconds}");
+            var text = $"shutdown /r /t {seconds}";
+            Clipboard.SetText(text);
+            NotifyIcon.ShowBalloonTip(1000,
+                "Shutdown Command Coppied",
+                $"The shutdown command \"{text}\" was coppied to your clipboard. When run, this will reboot your computer at 4:00 AM.", ToolTipIcon.Info);
         }
 
         private static DateTime GetNext4AM(DateTime now)

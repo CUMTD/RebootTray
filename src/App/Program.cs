@@ -13,16 +13,25 @@ namespace RebootTray.App
         [STAThread]
         private static void Main()
         {
-            // Only start if it is not already running.
+#if DEBUG
+            StartApp();
+#else
+    // Only start if it is not already running.
             var appProcessName = Path.GetFileNameWithoutExtension(Application.ExecutablePath);
             var runningProcesses = Process.GetProcessesByName(appProcessName);
             if (runningProcesses.Length == 1)
             {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                ApplicationContext applicationContext = new RebootTrayApplicationContext();
-                Application.Run(applicationContext);
+                StartApp();
             }
+#endif
+        }
+
+        private static void StartApp()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            ApplicationContext applicationContext = new RebootTrayApplicationContext();
+            Application.Run(applicationContext);
         }
     }
 }

@@ -137,11 +137,18 @@ namespace RebootTray.App
                 var timespan = then - now;
                 var seconds = Math.Round(timespan.TotalSeconds);
                 var text = $"shutdown /r /t {seconds}";
-                Clipboard.SetText(text);
-                NotifyIcon.ShowBalloonTip(1000,
-                    "Shutdown Command Coppied",
-                    $"The shutdown command \"{text}\" was coppied to your clipboard. When run, this will reboot your computer at 4:00 AM.",
-                    ToolTipIcon.Info);
+                try
+                {
+                    Clipboard.SetText(text);
+                    NotifyIcon.ShowBalloonTip(1000,
+                        "Shutdown Command Coppied",
+                        $"The shutdown command \"{text}\" was coppied to your clipboard. When run, this will reboot your computer at 4:00 AM.",
+                        ToolTipIcon.Info);
+                }
+                catch (Exception ex)
+                {
+                    NotifyIcon.ShowBalloonTip(1000, "Unable to access clipboard.", ex.Message, ToolTipIcon.Error);
+                }
             }
         }
 
